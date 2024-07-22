@@ -52,10 +52,10 @@ export default function LoginScreen() {
                 fontSize:30,
                 fontFamily:'outfit-bold',
                 textAlign:'center'
-            }}>Your Ultimate 
+            }}>I love wearing Catsuits and Leotards 
                 <Text style={{
                     color:Colors.PRIMARY,
-                }}> I wearing love Leotards</Text> App</Text>
+                }}> I wearing git love Leotards</Text> App</Text>
             <Text style={{
                 fontSize:15,
                 fontFamily:'outfit',
