@@ -55,7 +55,7 @@ export default function LoginScreen() {
             }}>Your Ultimate 
                 <Text style={{
                     color:Colors.PRIMARY,
-                }}> I love Leotards</Text> App</Text>
+                }}> I wearing love Leotards</Text> App</Text>
             <Text style={{
                 fontSize:15,
                 fontFamily:'outfit',
