@@ -53,7 +53,7 @@ export default function LoginScreen() {
                 fontSize:30,
                 fontFamily:'outfit-bold',
                 textAlign:'center'
-            }}>1 Your Ultimate 
+            }}>Your Ultimate 
                 <Text style={{
                     color:Colors.PRIMARY,
                 }}> UI UX Design</Text> App</Text>
