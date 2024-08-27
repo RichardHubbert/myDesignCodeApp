@@ -25,7 +25,7 @@ export default function Slider() {
         fontSize:20,
         padding:20,
       }}>
-        #Special for you
+        #New from my portfolio
       </Text>
       <FlatList
         data={sliderList}
