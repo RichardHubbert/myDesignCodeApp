@@ -56,7 +56,7 @@ export default function LoginScreen() {
             }}>Your Ultimate 
                 <Text style={{
                     color:Colors.PRIMARY,
-                }}> 1 UI UX Design</Text> App</Text>
+                }}> UI UX Design</Text> App</Text>
             <Text style={{
                 fontSize:15,
                 fontFamily:'outfit',
