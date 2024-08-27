@@ -35,12 +35,12 @@ export default function LoginScreen() {
         <View style={{
             display:'flex',
             alignItems:'center',
-            marginTop:10
+            marginTop:-30
         }}>
         <Image source={require('./../assets/images/laptopGirlWhite_001.png')}
             style={{
                 width:400,
-                height:400,
+                height:420,
                 borderRadius:20,
                 objectFit: 'contain'
               }}
@@ -49,10 +49,11 @@ export default function LoginScreen() {
 
         <View style={styles.subContainer}>
             <Text style={{
+                marginTop:30,
                 fontSize:30,
                 fontFamily:'outfit-bold',
                 textAlign:'center'
-            }}>Your Ultimate 
+            }}>1 Your Ultimate 
                 <Text style={{
                     color:Colors.PRIMARY,
                 }}> UI UX Design</Text> App</Text>
@@ -61,6 +62,7 @@ export default function LoginScreen() {
                 fontFamily:'outfit',
                 textAlign:'center',
                 marginVertical:15,
+                marginBottom:60,
                 color:Colors.GRAY
             }}>Find your favorite business near your and post your own business to your community</Text>
 
@@ -82,7 +84,7 @@ export default function LoginScreen() {
 
 const styles = StyleSheet.create({
     subContainer:{
-        backgroundColor:'#fff',
+        backgroundColor:'#ffffff',
         padding:20,
         marginTop:-20,
         
