@@ -19,7 +19,7 @@ export default function BusinessListByCategory() {
             headerTitle:category,
             
             headerStyle: {
-                backgroundColor:Colors.PRIMARY
+                backgroundColor:Colors.WHITE
                 
             },
            
@@ -62,7 +62,7 @@ export default function BusinessListByCategory() {
             marginTop:'60%'
         }}
             size={'large'}
-            color={Colors.PRIMARY}
+            color={Colors.WHITE}
         />:
         <Text style={{
             fontSize:20,
@@ -71,7 +71,7 @@ export default function BusinessListByCategory() {
             textAlign:'center',
             marginTop:'50%'
         }}>
-            No Business Found    
+            No Project Category Found    
         </Text>}
     </View>
   )

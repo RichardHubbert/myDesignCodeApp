@@ -75,7 +75,7 @@ export default function Reviews({ business }) {
 
             {/* Display Previous Reviews  */}
 
-            <View>
+{/*             <View>
                 {business?.reviews?.map((item, index) => (
                     <View style={{
                         display:'flex',
@@ -112,7 +112,7 @@ export default function Reviews({ business }) {
                         </View>
                     </View>
                 ))}
-            </View>
+            </View> */}
         </View>
     )
 }

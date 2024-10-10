@@ -32,7 +32,7 @@ export default function PopularBusiness() {
         fontFamily:'outfit-bold'}}>
             Popular Projects
             </Text>
-            <Text style={{color:Colors.PRIMARY,fontFamily:'outfit-medium',marginRight:20,}}>View All</Text>
+            {/* <Text style={{color:Colors.PRIMARY,fontFamily:'outfit-medium',marginRight:20,}}>View All</Text> */}
         </View>
 
         <FlatList

@@ -3,62 +3,34 @@ import React from 'react'
 import { useUser } from '@clerk/clerk-expo'
 import {Colors} from './../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons';
+
 export default function Header() {
-
-    const {user}=useUser();
-
   return (
     <View style={{
-        padding:20,
-        paddingTop:40,
-        backgroundColor:Colors.PRIMARY,
-        borderBottomLeftRadius:20,
-        borderBottomRightRadius:20
+        padding: 20,
+        paddingTop: 40,
+        backgroundColor: '#39008B',
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
+        alignItems: 'flex-start'
     }}>
       <View style={{
-        display:'flex',
-        flexDirection:'row',
-        alignItems:'center',
-        gap:10
+        alignItems: 'flex-start', // Changed from 'flex-start' to 'center'
       }}>
-            <Image source={{uri:user?.imageUrl}}
-                style={{
-                    width:45,
-                    height:45,
-                    borderRadius:99
-                }}
-            />
-            <View>
-                <Text style={{
-                    color:'#fff'
-                }}>Welcome,</Text>
-                <Text style={{
-                    fontSize:19,
-                    color:'#fff',
-                    fontFamily:'outfit-medium'
-                }}>{user?.fullName}</Text>
-            </View>
+        <Text style={{
+            color: '#ffffff',
+            fontSize: 20,
+
+        }}>Welcome,</Text>
+        <Text style={{
+            fontSize: 19,
+            color: '#ffffff',
+            fontFamily: 'outfit-medium',
+            alignContent: 'flex-start',
+            textAlign: 'left', // Added to center-align text
+        }}></Text>
       </View>
-      {/* Search Bar  */}
-      <View style={{
-        display:'flex',
-        flexDirection:'row',
-        gap:10,
-        alignItems:'center',
-        backgroundColor:'#fff',
-        padding:10,
-        marginVertical:10,
-        marginTop:15,
-        borderRadius:8
-      }}>
-            <Ionicons name="search" size={24} color={Colors.PRIMARY} />
-            <TextInput placeholder='Search...' 
-            style={{
-                fontFamily:'outfit',
-                fontSize:16
-            }}
-            />
-      </View>
+      {/* Search Bar code remains commented out */}
     </View>
   )
 }

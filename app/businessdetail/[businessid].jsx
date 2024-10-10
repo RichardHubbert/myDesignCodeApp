@@ -41,7 +41,7 @@ export default function BusinessDetail() {
         marginTop:'70%'
       }}
       size={'large'}
-      color={Colors.PRIMARY}
+      color={Colors.WHITE}
       />:  
       <View>
         {/* Intro  */}
@@ -53,7 +53,7 @@ export default function BusinessDetail() {
 
         
         {/* Review Section  */}
-        <Reviews business={business} />
+        {/* <Reviews business={business} /> */}
      
       </View>
     }

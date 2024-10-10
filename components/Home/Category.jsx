@@ -43,9 +43,9 @@ export default function Category({explore=false,onCategorySelect}) {
       
         fontSize:20,
         fontFamily:'outfit-bold'}}>
-            Category
+            Project Categories
             </Text>
-            <Text style={{color:Colors.PRIMARY,fontFamily:'outfit-medium'}}>View All</Text>
+            {/* <Text style={{color:Colors.PRIMARY,fontFamily:'outfit-medium'}}>View All</Text> */}
         </View>}
  
         <FlatList

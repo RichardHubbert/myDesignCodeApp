@@ -16,8 +16,8 @@ export default function PopularBusinessCard({business}) {
     }}>
         <Image source={{uri:business?.imageUrl}}
             style={{
-                width:200,
-                height:130,
+                width:240,
+                height:260,
                 borderRadius:15
             }}
         />

@@ -6,7 +6,7 @@ export default function CategoryItem({category,onCategoryPress}) {
   return (
     <TouchableOpacity onPress={()=>onCategoryPress(category)}>
         <View style={{padding:15,
-        backgroundColor:Colors.PRIMARY,
+        backgroundColor:Colors.LBLUE,
         borderRadius:99,
         marginRight:15,
         alignItems:'center',

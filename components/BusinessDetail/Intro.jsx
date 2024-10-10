@@ -8,7 +8,7 @@ import { useUser } from '@clerk/clerk-expo';
 export default function Intro({business}) {
  
     const router=useRouter();
-    const {user}=useUser();
+
     const OnDelete=()=>{
         Alert.alert('Do you want to Delete?','Do you really want to Delete this business?',[
             {
@@ -39,7 +39,7 @@ export default function Intro({business}) {
             flexDirection:'row',
             justifyContent:'space-between',
             width:'100%',
-            paddingTop:30,
+            paddingTop:60,
             paddingLeft:20
         }}>
             <TouchableOpacity onPress={()=>router.back()}>
@@ -51,7 +51,7 @@ export default function Intro({business}) {
         <Image source={{uri:business?.imageUrl}}
             style={{
                 width:'100%',
-                height:340
+                height:360
             }}
         />
 
@@ -68,14 +68,14 @@ export default function Intro({business}) {
             }}
             >
         <View style={{
-            padding:20,
-            marginTop:-20,
+            padding:1,
+            marginTop:-10,
             backgroundColor:'#71c9d7',
             borderTopLeftRadius:25,
             borderTopRightRadius:25
         }}>
             <Text style={{
-                fontSize:26,
+                fontSize:24,
                 fontFamily:'outfit-bold'
             }}>{business?.name}
            
@@ -88,10 +88,10 @@ export default function Intro({business}) {
             >{business?.address}</Text>
 
         </View>
-       {user?.primaryEmailAddress?.emailAddress==business?.userEmail&& <TouchableOpacity onPress={()=>OnDelete()}>
-        <Ionicons name="trash" size={24} color="red" />
+       <TouchableOpacity onPress={()=>OnDelete()}>
+        {/* <Ionicons name="trash" size={24} color="red" /> */}
 
-        </TouchableOpacity>}
+        </TouchableOpacity>
         </View>
     </View>
   )
